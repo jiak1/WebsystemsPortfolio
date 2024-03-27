@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Comments</title>
+	<link href="websystems.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+	<div class="sectionDIV red" id="Navigation">
+		<div id="navPageButtonDiv">
+			<div class="pageButton navPageButton flex-inline">
+				<!-- Licensed from https://www.flaticon.com/free-icon/home_25694 -->
+				<a href="index.html" class="white-link white-button nav-link"><img class="white-img navIMG" src="images/home.png" alt="An icon of a house."/> Home</a>
+			</div>
+			<div class="pageButton navPageButton flex-inline">
+				<!-- Licensed from https://www.flaticon.com/free-icon/history_716014 -->
+				<a href="past.html" class="white-link white-button nav-link"><img class="white-img navIMG" src="images/history.png" alt="A clock icon going back in time."/> Past Experiences</a>
+			</div>
+			<div class="pageButton navPageButton flex-inline">
+				<!-- Licensed from https://www.flaticon.com/free-icon/shuttle_2285485 -->
+				<a href="future.html" class="white-link white-button nav-link"><img class="white-img navIMG" src="images/shuttle.png" alt="A rocket ship icon, representing the future."/> Future Plans</a>
+			</div>
+			<div class="pageButton navPageButton flex-inline">
+				<!-- Licensed from https://www.flaticon.com/free-icon/comment_1380338 -->
+				<a href="comments.html" class="white-link white-button nav-link nav-selected"><img class="white-img navIMG" src="images/comment.png" alt="A comment symbol."/> Design Comments</a>
+			</div>
+		</div>
+	</div>
+	  <div class="strip" id="About"></div>
+	  <div class="sectionDIV grey">
+			<div class="textDiv">
+				<h2 class="centerText">Design Comments</h2>
+				<h3 class="centerText">Reflection</h3>
+				<!-- Reflection -->
+				<p>Overall I am very happy with how the website has turned out. The colour choices really make it appealing to the eye whilst still not being too jarring and harming readability. I managed to finish the site relatively quickly so timing wasn't too much of an issue for me and as such it meant I had some extra time to work on making the site more aesthetically pleasing.</p> 
+				
+				<p>However, I did find it difficult being limited to no Javascript or not using any external CSS libraries as I am particularly used to Bootstrap and JQuery. The other restrictions imposed also meant some of the effects I wanted to do such as animating the hand emoji to wave on the main page wasn't allowed and I had to remove them.</p> 
+				<p>I feel the site does a good job of representing me, my past and future experiences, ultimately fulfilling its goal. Whilst I did use classes to try and minimise code duplication I feel as though being allowed to use a dynamic programming language with templating would make my HTML look significantly neater, particularly with areas like the navbar. </p>
+				
+				
+				<h3 class="centerText">Technical Details</h3>
+				<!-- Technical Aspects/Structure -->
+				<p>I have utilised alot of different HTML elements for this website with over 400 lines of CSS I have a significant amount of both classes and ID's used when necessary. These are all required to ensure that the website has a consistent aesthetic and is visuall appealing.</p>
+
+				<p>The website is designed so that it can be templated and into sections. Each of these sections is a div with the <code>.sectionDiv</code> class. This class contains CSS that controls the width, setting it to 100% so that the sections don't have any gaps. Additionally it sets the display to ensure that they don't align side to side and only appear above each other. Each section div also contains a colour class whether it be <code>.grey .red .blue</code> which sets the divs background colour to the relevant one from the palette.</p>
+				
+				<p>Additionally as per W3's HTML guide, only relevant headings are used, with only one top heading per page so as to not confuse screenreaders. Each of these headings tags have CSS relating to their sizes & font weights to ensure that they are consistent and visually differentiable.</p> 
+				
+				<p>I have also being able to condense my CSS by applying rules to multiple tags. For example for all of my headings and text they share the same font family with fallbacks so it was much easier to write this all as: <br><br><code>h1, h2, h3,h4,h5, a, p, li, th, td {<br>font-family: "Segoe UI", Roboto, Arial, sans-serif;<br>}</code></p>
+				
+				<p>Another style class that I am using very frequently is <code>.inline-img</code> which makes sure that all of my images have a rounded border, maximum and minimum widths as well as being centered and displayed properly against my text.</p>
+
+				<p>Padding, margins, borders and whitespace are used very extensively throughout this project to ensure that the reader does not get overwhelemed with alot of text but to also make it easier to differentiate sections. For example almost all of the sections are constrained to <code>width:80%;</code> which makes sure that there is whitespace on the sides of the screen.</p> 
+
+				<p>I have also made use of the <code>code</code> tags whenever I am discussing HTML or CSS. This allows me to both apply different styles to make it stand out but to also allow users to copy and paste it without any additional metadata obfuscating the code.</p>
+
+				<p>Some of the most common classes I have used are in the table below with a short description as to what they are used for:</p>
+				<table>
+					<tr>
+						<th>Selector</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td class="bold">body</td>
+						<td>Sets the default background colour to blue & removes any margins to make sure that the section divs go the full page width.</td>
+					</tr>
+					<tr>
+						<td class="bold">html</td>
+						<td>Sets the scroll behaviour to smooth so that any inpage links scroll nicely to the destination.</td>
+					</tr>
+					<tr>
+						<td class="bold">code</td>
+						<td>Sets the colour to orange and the font-weight to be 500.</td>
+					</tr>
+					<tr>
+						<td class="bold">.bold</td>
+						<td>Sets text to bold.</td>
+					</tr>
+					<tr>
+						<td class="bold">.inline-img</td>
+						<td>Centers an image and allows adjacent ones to be next to it if there is space.</td>
+					</tr>
+					<tr>
+						<td class="bold">#welcomeSection</td>
+						<td>Makes the welcome page div center its content and fit the screen height. This is an ID because there is only one occurance of it.</td>
+					</tr>
+				</table>
+				<h3 class="centerText">Aesthetics</h3>
+				<!-- Aesthetics -->
+				<p>Visuals were a key consideration when creating the site, I needed to make sure that it both looked good but also ensure the visuals didn't detract from the page, make it difficult to read the text or see content. In order to make sure that I had a consistent, universal theme throughout I decided to create a colour palette utilising an online colour palette generator.</p>
+				<img class="inline-img" alt="My colour palette" src="images/palette.png"/>
+				<p>Using this tool I was able to quickly scan through lots of different complimentary colours to choose the palette as well as reference back to this whenever I needed the colours hex codes to ensure that different pages didn't have any variation.</p>
+				<p>I have tried to mix and match these colours in order to create variation, dividing the pages up into sections which each have a different background colour. Across all the pages I made sure never to put blue and red next to each other, always choosing to use the darker black background as an intermediary colour to ensure that the background of the page wasn't too distracting.</p>
+				<p>Consistency was key to ensuring that the website was aesthetically pleasing, as part of that I made sure to have all the headings utilise the same formatting, fonts and sizes to ensure that the users could easily distinguish between different levels of headings.</p>
+				<p>I have also tried to break up chunks of text and make the website visually appealing through the use of images, particularly icons. I have heavily utilised a free icon site called <a class="white-link" href="https://www.flaticon.com/" target="_blank">Flaticon</a> which has a database of over 100,000 icons. This site allowed me to download high quality images, that most importantly, had a consistent style which I could use on the site. All of the icons chosen had rounded curves as opposed to straight lines which complimented the style of my site. I have also tried to show this style through rounded edges on both the buttons and images throughout.</p>
+				<img class="inline-img" alt="The flaticon website." src="images/icon-site.png"/>
+				
+				
+				<h3 class="centerText">Accessibility</h3>
+				<!-- Accessibility -->
+				<p>Ensuring that my website is accessible to a variety of individuals was a key priority. Following the W3schools accessibility standards was one of the ways I wanted to try and ensure that everyone could use it where possible.</p>
+				<p>One of the ways I did this was by ensuring that all images had alternate text so that a screen reader could describe the images to a visually impaired user. Additionally the site should function and be usable with all CSS disabled and as such this was a key priority which meant I had to resize alot of my images so they appeared properly.</p>
+				<img class="inline-img" alt="The website without css." src="images/no-css.png"/>
+				<p>Additionally my website is fully usable via a keyboard so that someone who has difficulty using a mouse can use a combination of the arrow keys, tab and enter to navigate my website.</p>
+				<p>Whilst accessibility to individuals with disabilities is important, I also needed to consider users on different devices. As such I ensured that my website was fully responsive and worked with a variety of different devices and browsers including mobiles and desktops. I also tested the site at a variety of zoom levels to ensure that users who wish to zoom in or out can get the appropriate response.</p>
+				<img class="inline-img horizontal-image img-border" alt="The website when viewed from a mobile device." src="images/mobile.PNG"/>
+				<p>Finally to ensure my website was accessible to colourblind users I applied a colourblind filter to check that it was easy to differentiate text and images from the background.</p>
+				<img class="inline-img" alt="The website with a tritanopia colour filter applied." src="images/colourblind.png"/>
+		  </div>
+	  </div>
+	<div class="strip"></div>
+	<footer>
+		<div class="flex footerDiv">
+			<h4>CONTACT</h4>
+			<hr>
+			<p>Want to get in contact? Send an email to <a class="white-link" href="mailto:contact@jackdonaldson.net" target="_blank">contact@jackdonaldson.net</a></p>
+			<div><p class="small-text">Icons made by <a href="https://www.freepik.com" title="Freepik" class="white-link">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="white-link">www.flaticon.com</a></p></div>
+			<p>
+				<a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+					<img style="border:0;width:88px;height:31px"
+						src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+						alt="Valid CSS!" />
+				</a>
+			</p>
+		</div>
+	</footer>
+  </body>
+</html>

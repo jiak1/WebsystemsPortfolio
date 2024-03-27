@@ -1,0 +1,425 @@
+body{
+	background-color: #609ddf;
+	margin:0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code{
+	font-weight: normal;
+	color: darkorange;
+}
+
+th, td{
+	padding:20px;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+th{
+	background-color:#609ddf;
+}
+
+td{
+	background-color:#df6260;
+}
+
+table{
+	border-collapse: collapse;
+	color:white;
+}
+
+.img-border{
+	border: 3px solid white;
+}
+
+.horizontal-image{
+	max-height: 700px !important;
+    max-width: 300px !important;
+}
+
+.small-text{
+	font-size:0.75em;
+}
+
+.center-div{
+	text-align: center;
+}
+
+.inline-img{
+	width: 90%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 350px;
+	max-width:700px;
+    border-radius: 10px;
+	margin-bottom:40px;
+	margin-top:20px;
+}
+
+.textDiv{
+	margin:20px;
+	margin-top: 40px;
+    margin-bottom: 40px;
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerText{
+	text-align:center;
+}
+
+.center-button{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.fake-button{
+	font-weight: 500 !important;
+    font-size: 20px;
+    width: 230px !important;
+    background-color: #cdcdcd !important;
+	color:black !important;
+    margin-top: 0px !important;
+	margin-bottom: 20px;
+}
+
+p, li{
+	color:white;
+	font-size:20px;
+	text-align:justify;
+	line-height:1.55;
+}
+
+.minPageHeight{
+	min-height:100vh;
+}
+
+.dotted-link{
+	font-weight:500;
+
+}
+
+.text-bold{
+	font-weight:500;
+}
+
+.discrete-link{
+	text-decoration:none;
+	font-weight:500;
+}
+
+.white-button{
+	text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #39424a;
+	transition: background-color 100ms;
+	width: 145px;
+    text-align: center;
+}
+
+.white-button:hover,.white-button:active,.white-button:hover:active{
+	background-color:#4d5256;
+}
+
+.nav-link:hover,.nav-link:active,.nav-link:hover:active{
+	background-color:#00000033 !important;
+}
+
+#pageButtonDiv{
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.pageButton{
+	flex:0 0 30%;
+	min-width: 180px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.progButton{
+	flex:0 0 20%;
+	min-width: 160px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+	padding-top:20px;
+	height:200px;
+}
+
+.flex{
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-inline{
+	align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fillPageCenter{
+	margin: 20px;
+}
+
+.welcomePageSection{
+	height: calc(100vh + 50px);
+    width: 100%;
+}
+
+.sectionDIV{
+	display: inline-block;
+    width: 100%;
+}
+
+.red{
+	background-color:#df6260;
+}
+
+.grey{
+	background-color:#39424a;
+}
+
+#sectionTextDiv{
+	padding-top:50px;
+	padding-bottom:30px;
+	display:inline-block;
+	flex: 0 0 50%;
+    max-width: 100%;
+	width:100%;
+}
+
+#sectionInfographicDiv{
+	display:inline-block;
+	flex: 0 0 50%;
+    max-width: 100%;
+	padding-top:50px;
+	padding-bottom:30px;
+	width:100%;
+	vertical-align: top;
+}
+
+.inTextLink,.inTextLink:hover,.inTextLink:active,.inTextLink:hover:active{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 1.75em;
+	cursor:pointer;
+    font-weight: bold;
+	text-decoration:none;
+}
+
+.white-link,.white-link:hover{
+	color:white;
+}
+
+.strip{
+	height:6px;
+	background-color:white;
+	width:100%;
+}
+
+.footerDiv{
+	text-align:left;
+	width: fit-content;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 50px;
+}
+
+.footerDiv>hr{
+	width:60px;
+	margin-top:8px;
+}
+
+.footerDiv>p{
+	margin-top: 8px;
+	text-align: center;
+    max-width: 80%;
+}
+
+h1, h2, h3, h4, h5{
+	color:white;
+	font-weight:500;
+	line-height:1.2;
+	margin:0px;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 3em;
+}
+
+h3{
+	font-size: 2.5em;
+	text-align: center;
+    margin: 20px;
+}
+
+h4{
+	font-weight:bold;
+	font-size:1em;
+}
+
+h5{
+	font-size:2em;
+	margin:10px;
+	font-weight: 400 !important;
+}
+
+h1, h2, h3,h4,h5, a, p, li, th, td{
+	font-family: "Segoe UI",Roboto,Arial,sans-serif;
+}
+
+@media screen and (min-width: 780px){
+	h1 {
+		font-size: 5em;
+	}
+
+	.fillPageCenter {
+		margin: 40px;
+	}
+
+}
+
+@media screen and (min-width: 850px){
+	h1 {
+		font-size: 5em;
+	}
+
+	.fillPageCenter {
+		margin: 40px;
+	}
+
+	.inTextLink,.inTextLink:hover,.inTextLink:active,.inTextLink:hover:active{
+		font-size:2.25em;
+	}
+
+	#sectionTextDiv, #sectionInfographicDiv{
+		max-width: 49.7%;
+	}
+
+	#sectionInfographicDiv{
+		margin-top: 70px;
+	}
+}
+
+.white-img{
+	filter:brightness(0) invert(1);
+	width:40px;
+	height:40px;
+	vertical-align: top;
+	display:inline-block;
+}
+
+.bold{
+	font-weight:600;
+}
+
+.reg-img{
+	width:40px;
+	height:40px;
+	vertical-align: top;
+	display:inline-block;
+}
+
+#introductionDIV{
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;	
+}
+
+.centerTEXT{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	font-weight:bold;
+	text-align:center;
+	font-size:25px;
+	margin-top:15px;
+	max-width:300px;
+}
+
+.navPageButton{
+	min-width:270px;
+	margin-top:0px !important;
+	flex: 0 0 25%;
+}
+
+#navPageButtonDiv{
+	margin-top: 20px !important;
+	margin-bottom:0px !important;
+	margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.nav-selected{
+	font-weight:bold !important;
+}
+
+.nav-link{
+	font-weight:normal;
+	font-size:20px;
+	width: 230px !important;
+	background-color:transparent !important;
+	margin-top: 0px !important;
+}
+
+.centerIMG{
+	
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.navIMG{
+	margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+	vertical-align:top;
+}
+
+.centerText{
+	text-align: center;
+}
+
+.emphasis{
+	color: #df6260;
+    text-shadow: 1px 2px 0 rgb(175 59 59 / 50%);
+}
